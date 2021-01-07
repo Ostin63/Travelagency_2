@@ -1,169 +1,72 @@
-.show {
-  display: block;
-}
-
-.d-none {
-  display: none;
-}
-
-.pege-wrapper {
-  background: @color-white;
+body {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  font-family: 'Lato', 'Roboto', sans-serif;
-  box-sizing: border-box;
 }
 
-h1 {
-  margin: 0;
-  font-size: 44px;
-  line-height: 52px;
+.container,
+.container-fluid {
+  transition: all 1s;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
-  font-family: 'Rubik', 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 
-h2 {
+.script {
   margin: 0;
   font-size: 28px;
+  line-height: 28px;
+  font-family: 'SegoeScript', Arial, sans-serif;
+  font-weight: 400;
+  color: #ef5b5b;
+}
+
+.title {
+  font-size: 26px;
+  line-height: 26px;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
-  font-family: 'Rubik', 'Roboto', sans-serif;
 }
 
-h3 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
-  font-family: 'Rubik', 'Roboto', sans-serif;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  display: block;
-}
-
-ul {
-  list-style: none;
-}
-
-.owl-dots {
-  width: 60px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-
-  .owl-dot {
-    span {
-      width: 11px;
-      height: 11px;
-      display: block;
-      left: 0;
-      top: 2px;
-      border-radius: 50%;
-      background: @color-gray;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    &.active {
-      outline: none;
-
-
-      span {
-        background: @color-yellow;
-      }
-    }
-  }
-}
-
-.owl-carousel {
-  .owl-nav {
-    width: 82px;
-    margin-top: 43px;
-    margin-left: 1120px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-
-    .owl-prev {
-      background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 1L1 5L5 9' stroke='%23FF7236' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% 50% no-repeat !important;
-      background-size: cover;
-    }
-
-    .owl-next {
-      background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8.99951L5 4.99951L1 0.999512' stroke='%23FF7236' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% 50% no-repeat !important;
-      background-size: cover;
-    }
-
-    .owl-prev,
-    .owl-next {
-      width: 36px;
-      height: 36px;
-      display: block;
-      border-radius: 50%;
-      margin: 0 auto;
-      background-color: @color-white-white;
-      box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
-      cursor: pointer;
-
-      &:hover {
-        box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.4);
-      }
-
-      &:active {
-        box-shadow: 1px 2px 15px 0px rgba(100, 100, 100, 0.4);
-      }
-    }
-  }
-}
-
-fieldset {
-  border: 0;
-}
-
-@media @tablet-widths {
-  h1 {
-    font-size: 62px;
-    line-height: 73px;
-  }
-
-  h2 {
-    font-size: 36px;
-    line-height: 43px;
-  }
-
-  h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-  }
-
-  p {
-    font-size: 15px;
-    line-height: 140%;
-  }
-}
-
-@media @desktop-widths {
-  h3 {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 120%;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 140%;
-  }
-
+.title-montserrat {
+  font-size: 28px;
+  line-height: 28px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
 }
