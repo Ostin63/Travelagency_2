@@ -1,0 +1,140 @@
+.top-tour {
+  position: relative;
+}
+
+.top-tour h3 {
+  margin-bottom: 40px;
+}
+
+.top-tour .day {
+  font-size: 14px;
+}
+
+.top-tour-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+  background: #5f7786;
+}
+
+.package-services {
+  padding-top: 50px;
+}
+
+.package-services {
+  .title {
+    padding-bottom: 45px;
+  }
+}
+
+.top-tour-list {
+  li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: anim_slides 30s linear infinite 0s;
+  }
+}
+
+.top-tour {
+  .text-right {
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+
+  .text-right {
+    .text-danger {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  .rating,
+  .text-rating {
+    font-size: 12px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+
+  .rating,
+  .text-primary {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .rating,
+  .mb-0 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .text-rating {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-expand {
+    border-bottom: 1px solid #5f7786
+  }
+
+  .item {
+    background: #ffffff;
+  }
+}
+
+.top-tour-list {
+  li {
+    &:nth-child(1) {
+      background: url('../img/section-2/happiness.jpg') 50% 50% no-repeat;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 10.0s;
+      background: url(../img/section-2/sea.jpg) 50% 50% no-repeat;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 20.0s;
+      background: url(../img/section-2/love.jpg) 50% 50% no-repeat;
+    }
+  }
+}
+
+
+
+.top-tour-background {
+  padding: 40px 0;
+  background-color: rgba(43, 61, 77, 0.5);
+}
+
+.package-services {
+  .nav {
+    border: 10px solid;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-tour-background {
+    padding-top: 140px;
+    padding-bottom: 155px;
+  }
+
+  .package-services {
+    padding-top: 150px;
+  }
+
+  .package-services {
+    .title {
+      padding-bottom: 65px;
+    }
+  }
+}

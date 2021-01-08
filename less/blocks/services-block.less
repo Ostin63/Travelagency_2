@@ -1,0 +1,167 @@
+.owl-carousel {
+  .owl-nav span {
+    display: none;
+  }
+}
+
+.services-carousel {
+  .slide-1 li {
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+  }
+
+  .nav-item {
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 60px/2);
+  }
+
+  .nav-item-1 {
+    width: 60px;
+    height: 60px;
+    background: #fff url(../img/services/hotel.png) 50% 50% no-repeat;
+  }
+
+  .nav-item-2 {
+    width: 60px;
+    height: 69px;
+    background: #fff url(../img/services/tourist.png) 50% 50% no-repeat;
+  }
+
+  .nav-item-3 {
+    width: 60px;
+    height: 60px;
+    background: #fff url(../img/services/air.png) 50% 50% no-repeat;
+  }
+
+  .navbar-nav h4 {
+    padding-top: 140px;
+  }
+
+  .navbar-nav p {
+    width: 270px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
+  .navbar-nav {
+    margin-bottom: 40px;
+  }
+}
+
+.services-block .title {
+  margin-bottom: 40px;
+}
+
+.services-list .navbar-nav {
+  margin: 20px 0;
+  padding: 30px;
+  background: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .services-carousel {
+    .navbar-nav {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .slide-1 .owl-nav {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 30%;
+    transition: all 1s;
+  }
+
+  .slide-2 .owl-nav {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    bottom: -10%;
+    transition: all 1s;
+  }
+
+  .slide-1 .owl-nav .owl-prev::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ef5b5b url("../img/prev.svg") 50% 50% no-repeat;
+  }
+
+  .slide-1 .owl-nav .owl-next::before {
+    content: "";
+    position: absolute;
+    right: -40px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ef5b5b url("../img/next.svg") 50% 50% no-repeat;
+  }
+
+  .slide-2 .owl-nav .owl-prev::before {
+    content: "";
+    position: absolute;
+    left: 315px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ef5b5b url("../img/memorial/rev.png") 50% 50% no-repeat;
+    z-index: 1;
+  }
+
+  .slide-2 .owl-nav .owl-next::before {
+    content: "";
+    position: absolute;
+    right: 315px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ef5b5b url("../img/memorial/next.png") 50% 50% no-repeat;
+    z-index: 1;
+  }
+
+  .owl-nav .owl-prev:hover::before,
+  .owl-nav .owl-next:hover::before {
+    border: 2px solid #ffffff;
+  }
+
+  .services-carousel {
+    .navbar-nav {
+      margin-bottom: 100px;
+    }
+  }
+
+  .services-list .col-xl-auto {
+    width: 530px;
+    transition: all 1s;
+  }
+}
+
+@media (min-width: 1500px) {
+  .services-carousel {
+    .navbar-nav {
+      margin-bottom: 130px;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .services-block {
+    padding-top: 150px;
+    padding-bottom: 155px;
+  }
+
+  .services-carousel {
+    .navbar-nav {
+      margin-bottom: 140px;
+    }
+  }
+}

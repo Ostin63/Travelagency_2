@@ -14,24 +14,31 @@
   line-height: 52px;
 }
 
-.promo p:nth-child(2) {
-  font-size: 41px;
-  line-height: 52px;
-  font-weight: 700;
-}
+.promo p {
+  &:nth-child(2) {
+    font-size: 41px;
+    line-height: 52px;
+    font-weight: 700;
+  }
 
-.promo p:nth-child(3) {
-  line-height: 52px;
+  &:nth-child(3) {
+    line-height: 52px;
+  }
 }
 
 .features {
   padding-top: 30px;
   padding-bottom: 30px;
   background: #ffffff;
+
+  .script {
+    margin: 0;
+  }
 }
 
-.features .script {
-  margin: 0;
+.features-container {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .catalog-item {
@@ -43,36 +50,34 @@
   border: 1px solid #5f7786;
 }
 
-.catalog-item .navbar-nav {
-  padding: 5px 0;
-  border-top: 1px solid #5f7786;
-  border-bottom: 1px solid #5f7786;
-}
+.catalog-item {
+  .navbar-nav {
+    padding: 5px 0;
+    border-top: 1px solid #5f7786;
+    border-bottom: 1px solid #5f7786;
+  }
 
-.catalog-item .button {
-  text-transform: capitalize;
+  .button {
+    text-transform: capitalize;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .catalog-text {
+    margin: 15px 0;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+  }
 }
 
 .features-title {
-  min-width: 280px !important;
+  min-width: 280px;
 }
 
-.features-title p {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.catalog-item p {
-  margin-bottom: 0;
-}
-
-.catalog-item .catalog-text {
-  margin: 15px 0;
-  font-size: 20px;
-  line-height: 26px;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 700;
-}
 
 .text-rating {
   font-size: 14px;
@@ -89,4 +94,32 @@
   padding-top: 30px;
   padding-bottom: 30px;
   background: #f0efef;
+}
+
+@media (min-width: 1200px) {
+  .catalog-item.col {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .catalog-item.col {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .features-container {
+    padding-left: 15%;
+    padding-right: 4%;
+  }
+
+  .features {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .catalog-item.col {
+    margin-top: -180px;
+  }
 }
