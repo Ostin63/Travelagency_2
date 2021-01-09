@@ -1,77 +1,13 @@
-.slide-3 {
-  padding-left: 0;
-
-  .item {
-    margin: 0 auto;
-    max-width: 270px;
-    list-style: none;
-  }
-}
-
-.review-item {
-  margin: 0 auto;
-  margin-bottom: 40px;
-  padding: 100px 65px 50px 65px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #ffffff;
-  background: url(../img/memorial/quotes.png) 50% 5% no-repeat;
-
-  p {
-    padding: 0;
-    max-width: 700px;
-  }
-
-  .slide-3 {
-    margin-top: 50px;
-  }
-
-  .review {
-    position: relative;
-    padding-right: 30px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 45px;
-      right: -20px;
-      width: 65px;
-      height: 2px;
-      transform: rotate(-70deg);
-      background: #ffffff;
-    }
-  }
-}
-
-
-
 .reviews {
   position: relative;
   padding-top: 870px;
-  padding-bottom: 350px;
-  background: url(../img/memorial/border-4.png) 50% 50% no-repeat;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background: #2bbeff;
 
   .video {
     margin-bottom: 324px;
   }
-}
-
-.video-icon {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  cursor: pointer;
-  z-index: 1;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
-}
-
-.video-text {
-  z-index: 1;
 }
 
 .reviews-background {
@@ -91,121 +27,200 @@
     top: 0;
     left: 0;
     opacity: 0;
-    animation: anim_slides 40s linear infinite 0s;
-  }
+    animation: anim_slides 24s linear infinite 0s;
 
-  &:nth-child(1) {
-    background-image: url('../img/memorial/border-1.png');
-    background-repeat: no-repeat;
-    background-position-x: 20%;
-    background-position-y: 50%;
-  }
+    &:nth-child(1) {
+      background: url('../img/memorial/border-1.png') 15% 0 no-repeat;
+    }
 
-  &:nth-child(2) {
-    animation-delay: 10.0s;
-    background-image: url('../img/memorial/border-2.png');
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 50%;
-  }
+    &:nth-child(2) {
+      animation-delay: 6.0s;
+      background: url('../img/memorial/border-2.png') 15% 0 no-repeat;
+    }
 
-  &:nth-child(3) {
-    animation-delay: 20.0s;
-    background-image: url('../img/memorial/border-1.png');
-    background-repeat: no-repeat;
-    background-position-x: 20%;
-    background-position-y: 50%;
-  }
+    &:nth-child(3) {
+      animation-delay: 12.0s;
+      background: url('../img/memorial/border-1.png') 15% 0 no-repeat;
+    }
 
-  &:nth-child(4) {
-    background-image: url('../img/memorial/border-2.png');
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 50%;
-    animation-delay: 30.0s;
+    &:nth-child(4) {
+      animation-delay: 18.0s;
+      background: url('../img/memorial/border-2.png') 15% 0 no-repeat;
+    }
   }
 }
 
+.video-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.video-text {
+  z-index: 1;
+}
+
+.review-item {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 100px 20px 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ffffff;
+  background: url(../img/memorial/quotes.png) 50% 5% no-repeat;
+
+  p {
+    padding: 0;
+    max-width: 700px;
+  }
+
+  .review {
+    position: relative;
+    padding-right: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 45px;
+      right: -20px;
+      width: 65px;
+      height: 2px;
+      transform: rotate(-70deg);
+      background: #ffffff;
+    }
+  }
+}
+
+.slider-reviews {
+  position: relative;
+  margin: 0 auto;
+
+  .slick-arrow {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 31px;
+    top: 65px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 0;
+    outline: none;
+    z-index: 2;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  .slick-prev {
+    right: -15px;
+    background: url("../img/memorial/next.png") 50% 50% no-repeat;
+
+  }
+
+  .slick-next {
+    left: -15px;
+    background: url("../img/memorial/rev.png") 50% 50% no-repeat;
+
+  }
+}
+
+.item-reviews {
+  text-align: center;
+
+  img {
+    margin: 0 auto;
+  }
+}
 
 @media (min-width: 600px) {
-  .slide-3 {
-    width: 500px;
+  .review-item {
+    position: relative;
+    margin-top: 50px;
+    padding: 100px 65px 50px 65px;
+    border-radius: 15px;
+
+    &::after,
+    &::before {
+      width: 0;
+      height: 0;
+      content: '';
+      border-left: 44px solid transparent;
+      border-right: 44px solid transparent;
+      border-bottom: 44px solid #2bbeff;
+      position: absolute;
+      top: -43px;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    &::before {
+      border-left-width: 45px;
+      border-right-width: 45px;
+      border-top-width: 45px;
+      border-bottom-color: #fff;
+      top: -45px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .block-slider {
+    width: 630px;
     margin: 0 auto;
   }
 
-  .slide-3 {
-    .owl-nav {
-      width: 100%;
-      z-index: -1;
-      position: absolute;
-      top: 20%;
-      transition: all 1s;
+  .slider-reviews {
+    width: 500px;
+    margin: 0 auto;
+
+    .slick-slide {
+      transition: transform 0.5s;
+      transform: scale(0.6);
     }
 
-    .owl-prev::before {
-      content: "";
-      position: absolute;
-      left: -40px;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: url("../img/memorial/rev.png") 50% 50% no-repeat;
+    .slick-xxx {
+      transform: scale(0.8);
+      opacity: 0.5;
     }
 
-    .owl-next::before {
-      content: "";
-      position: absolute;
-      right: -40px;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: url("../img/memorial/next.png") 50% 50% no-repeat;
+    .slick-xxx+.slick-slide {
+      transform: scale(1);
     }
-  }
 
-  .review-item {
-    position: relative;
-    border: 0;
-    background: url(../img/memorial/border.svg) 50% 50% no-repeat;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 15%;
-      left: calc(50% - 45/2);
-      width: 45px;
-      height: 38px;
-      background: url(../img/memorial/quotes.png) 50% 0 no-repeat;
+    .slick-xxx+.slick-slide+.slick-slide {
+      transform: scale(0.8);
+      opacity: 0.5;
     }
   }
 }
 
 @media (min-width: 1500px) {
   .reviews {
-    margin-bottom: 150px;
-  }
-}
+    padding-bottom: 350px;
+    background: none;
+    background: url('../img/memorial/reviews-background.png') 15% 0 no-repeat;
 
-@media (min-width: 1910px) {
-  .reviews {
-    .img-1 {
-      position: absolute;
-      top: 150px;
-      left: 52%;
-      width: 565px;
-      height: 275px;
-      background-image: url(../img/memorial/airplane.png);
-      background-repeat: no-repeat;
+    &::after {
+      background: url('../img/memorial/airplane.png') 0 0 no-repeat;
     }
 
-    .img-2 {
-      position: absolute;
-      top: 290px;
-      left: 52.5%;
-      width: 561px;
-      height: 171px;
-      background: url(../img/memorial/airplane-shadow.png);
-      background-repeat: no-repeat;
+    .block-slider {
+      width: 830px;
     }
   }
 }
